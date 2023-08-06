@@ -7,7 +7,7 @@ class AbstractAPI(ABC):
     """
 
     @abstractmethod
-    def get_vacancies(self, job_title):
+    def get_vacancies(self, employer_id):
         """
         Метод для поиска вакансий через HeadHunter API.
         """
