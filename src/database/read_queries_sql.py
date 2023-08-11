@@ -1,3 +1,6 @@
+import os
+import sys
+sys.path.append(os.getcwd())
 from config import QUERIES_PATH
 
 
