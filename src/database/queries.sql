@@ -50,7 +50,7 @@ SELECT
     vacancy_url
 FROM all_vacancies;
 
---Выбор средний зарплаты по вакансиям
+--Выбор средней зарплаты по вакансиям
 SELECT
     (SELECT round(avg(vacancy_salary_from)) 
         FROM all_vacancies WHERE vacancy_salary_from != 0) 
