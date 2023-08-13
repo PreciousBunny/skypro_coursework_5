@@ -81,23 +81,23 @@ class JobParser(metaclass=JobParserMeta):
             print("5. Для получения списка всех вакансий, в названии которых содержится введенное слово")
             print("6. Сохранить все вакансии в файл")
             print("0. Выход (exit)")
-            menu_command_selection = int(input("\nПожалуйста, выберите один из предложенных вариантов:\n>_ "))
+            menu_command_selection = input("\nПожалуйста, выберите один из предложенных вариантов:\n>_ ")
 
-            if menu_command_selection == 1:
+            if menu_command_selection == "1":
                 cls._get_companies_and_vacancies_count()
-            elif menu_command_selection == 2:
+            elif menu_command_selection == "2":
                 cls._get_all_vacancies()
-            elif menu_command_selection == 3:
+            elif menu_command_selection == "3":
                 print("Средня зарплата в рублях:", end=" ")
                 cls.get_avg_salary()
-            elif menu_command_selection == 4:
+            elif menu_command_selection == "4":
                 cls.get_vacancies_with_higher_salary()
-            elif menu_command_selection == 5:
+            elif menu_command_selection == "5":
                 keyword = input("Введите слово:\n>_ ")
                 cls.get_vacancies_with_keyword(keyword)
-            elif menu_command_selection == 6:
+            elif menu_command_selection == "6":
                 cls.db_manager.save_vacancies_to_json_file('vacancies.json')
-            elif menu_command_selection == 0:
+            elif menu_command_selection == "0":
                 print("Спасибо, что воспользовались нашим новым приложением! Мы рады были Вам помочь!\n")
                 break
             else:
