@@ -83,7 +83,7 @@ class JobParser(metaclass=JobParserMeta):
             print("0. Выход (exit)")
             menu_command_selection = int(input("\nПожалуйста, выберите один из предложенных вариантов:\n>_ "))
 
-            if menu_command_selection == "1":
+            if menu_command_selection == 1:
                 cls._get_companies_and_vacancies_count()
             elif menu_command_selection == 2:
                 cls._get_all_vacancies()
@@ -127,9 +127,7 @@ class JobParser(metaclass=JobParserMeta):
         """
         Метод выводит на экран среднюю зарплату по вакансиям.
         """
-        result_db = cls.db_manager.get_avg_salary()
-        result_found = result_db.to_string(index=False)
-        print(result_found)
+        print(cls.db_manager.get_avg_salary())
 
     @classmethod
     def get_vacancies_with_higher_salary(cls):

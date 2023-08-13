@@ -17,5 +17,5 @@ EMPLOYERS_VACANCY_ID = {
     "SetlGroup": 2864629,
     "ПИК": 12550,
     "ЛУКОЙЛ": 907345,
-    "MOEX": 4307,
+    "MOEX": 4307
 }

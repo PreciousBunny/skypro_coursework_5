@@ -21,5 +21,7 @@ def read_queries_sql():
                 current_query = ""
             else:
                 current_query += line
-
+    if current_query_name and current_query:
+        queries_sql[current_query_name] = current_query.strip()
+        
     return queries_sql

@@ -111,7 +111,7 @@ class DBManager(MixinConnectDB, MixinSaveJsonFile):
         """
         self._create_table_company(company_name)
 
-        query = self.queries_sql["Добавление вакансии в таблицу компании "].replace("{company_name}", company_name)
+        query = self.queries_sql["Добавление вакансии в таблицу компании"].replace("{company_name}", company_name)
         params = (vacancy_id, vacancy_name, vacancy_salary_from, vacancy_salary_to, vacancy_currency, vacancy_url)
         self._execute_query(query, params)
 
@@ -154,6 +154,7 @@ class DBManager(MixinConnectDB, MixinSaveJsonFile):
         """
         Метод получает список всех вакансий, в названии которых содержатся переданные в метод слова.
         """
-        query = self.queries_sql["Выбор списка всех вакансий, в названии которых содержатся переданные в метод слова"]
+        query = self.queries_sql[
+            "Выбор списка всех вакансий, в названии которых содержатся переданные в метод слова"]
         params = ('%' + keyword + '%',)
         return self._description_query(query, params=params, fetch=True)

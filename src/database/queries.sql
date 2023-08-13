@@ -29,7 +29,7 @@ CREATE SCHEMA public;
 INSERT INTO all_vacancies (id, company_name, vacancy_name, vacancy_salary_from, vacancy_salary_to, vacancy_currency, vacancy_url)
 VALUES (%s, %s, %s, %s, %s, %s, %s);
 
---Добавление вакансии в таблицу компании 
+--Добавление вакансии в таблицу компании
 INSERT INTO {company_name} (vacancy_id, vacancy_name, vacancy_salary_from, vacancy_salary_to, vacancy_currency, vacancy_url)
 VALUES (%s, %s, %s, %s, %s, %s);
 
