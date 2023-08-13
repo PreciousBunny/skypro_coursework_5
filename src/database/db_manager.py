@@ -115,7 +115,7 @@ class DBManager(MixinConnectDB, MixinSaveJsonFile):
         params = (vacancy_id, vacancy_name, vacancy_salary_from, vacancy_salary_to, vacancy_currency, vacancy_url)
         self._execute_query(query, params)
 
-    def get_companies_and_vacancies_count(self):
+    def _get_companies_and_vacancies_count(self):
         """
         Метод получает список всех компаний и количество вакансий у каждой компании.
         """
