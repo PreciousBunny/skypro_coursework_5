@@ -8,7 +8,7 @@ class HeadHunterAPI(AbstractAPI):
     """
     url = "https://api.hh.ru/vacancies"
 
-    def __init__(self, url, vacancies_count=50):
+    def __init__(self,  url=url, vacancies_count=50):
         """
         Инициализация класса HeadHunterAPI.
         """
