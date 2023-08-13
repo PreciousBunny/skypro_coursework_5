@@ -91,3 +91,5 @@ FROM all_vacancies
 WHERE lower(vacancy_name) ILIKE %s
 ORDER BY vacancy_salary_from DESC, 
         vacancy_salary_to DESC;
+
+--Символ для завершения чтения SQL-запросов из файла - НЕ УДАЛЯТЬ!!(При добавлении новых команд - эта строка должна быть в конце)
