@@ -1,4 +1,4 @@
--- Active: 1689901380539@@127.0.0.1@5432@hh_job_parser@public
+-- Active: 1689901380539@@127.0.0.1@5432@hh_job_parser
 --Создание общей таблицы вакансий
 CREATE TABLE IF NOT EXISTS all_vacancies(
             id INTEGER PRIMARY KEY,
