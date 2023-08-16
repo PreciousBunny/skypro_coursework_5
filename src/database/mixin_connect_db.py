@@ -1,7 +1,8 @@
 import os
 import sys
 sys.path.append(os.getcwd())
-from config import CONNECT_DB
+# from config import CONNECT_DB
+from config import CONN_DB
 
 
 class MixinConnectDB:
@@ -14,7 +15,7 @@ class MixinConnectDB:
         Метод позволяет подключаться к базе данных PostgreSQL.
         """
         try:
-            self.connected = CONNECT_DB
+            self.connected = CONN_DB
             print("database connected.")
         except Exception as ex:
             print("Error connecting to the database:", ex)

@@ -41,5 +41,5 @@
    CREATE DATABASE hh_job_parser;
 ```
 
-6) В файле config.py (skypro_coursework_5\config.py), в константе "CONNECT_DB" изменить параметр "password" на свой пароль от базы данных PostgreSQL.
+6) В файле database.ini (skypro_coursework_5\database.ini), изменить параметр "password" на свой пароль от базы данных PostgreSQL.
 7) Запустить исполняющий файл main.py
